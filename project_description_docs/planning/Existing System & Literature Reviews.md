@@ -9,7 +9,7 @@ Currently, *Hue Hostel* operates without a **Hostel Management System (HMS)**
 
 - **Financial mismanagement**: Fee collection, defaulters' tracking, and receipt generation are done manually, increasing errors and delays.
 
-- **Data insecurity**: Paper records are prone to damage, loss, or unauthorized access.
+- **Data insecurity**: Paper records are prone to damages, loss, or unauthorized access.
 
 ---
 
