@@ -5,4 +5,4 @@ const attandance = Router({ mergeParams: true })
 
 attandance.get("/", getAttandances)
 
-module.exports = attandance
+module.exports = attandance;
