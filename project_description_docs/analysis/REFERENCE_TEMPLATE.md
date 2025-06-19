@@ -5,9 +5,9 @@
 - Requirement determination
 - Requirement collection
 - Functional requirement
-  - list out functional requirement of your system and draw use-case diagram.
+    - list out functional requirement of your system and draw use-case diagram.
 - Non-functional requirement
-  - Justify non-functional requirements of your system
+    - Justify non-functional requirements of your system
 
 ## Assessing project feasibility
 

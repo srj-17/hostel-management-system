@@ -1,8 +1,8 @@
-const { getPayments } = require("../controllers/paymentsController");
+const { getPayments } = require("../controllers/paymentsController")
 
-const { Router } = express();
-const payment = Router();
+const { Router } = express()
+const payment = Router()
 
-payment.get("/", getPayments);
+payment.get("/", getPayments)
 
-module.exports = payment;
+module.exports = payment

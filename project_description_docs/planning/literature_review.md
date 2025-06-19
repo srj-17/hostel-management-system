@@ -1,4 +1,3 @@
-
 ## 1. What Exists? (Current Scenario)
 
 Currently, *Hue Hostel* operates without a **Hostel Management System (HMS)**, relying entirely on manual and paper-based processes. This traditional approach leads to several inefficiencies:
@@ -18,6 +17,7 @@ Currently, *Hue Hostel* operates without a **Hostel Management System (HMS)**
 The **Hostel Management System (HMS)** for *Hue Hostel* is designed to address critical operational inefficiencies by integrating **digital enrollment, communication, and payment tracking** into a centralized platform.The scope includes:
 
 ## Scopes of the HMS
+
 #### **1. Enhanced Student Enrollment Process**
 
 - **Digital Registration Portal:** Secure online form for student applications, including personal details, course information, and emergency contacts.
@@ -27,7 +27,7 @@ The **Hostel Management System (HMS)** for *Hue Hostel* is designed to addres
 
 #### **2. Efficient Technical Management of Hostel Operations**
 
-- **Maintenance Request System:** Ticketing platform for students to report hostel issues  with status tracking.
+- **Maintenance Request System:** Ticketing platform for students to report hostel issues with status tracking.
 - **Inventory & Asset Management:** Log for hostel resources (beds, furniture, appliances) with maintenance schedules.
 - **Visitor Management:** Digital log for guest entries/exits with automated check-in/check-out timestamps.
 - **Automated Notices & Alerts:** Broadcast announcements (e.g., events) via SMS/email.
@@ -44,7 +44,6 @@ The **Hostel Management System (HMS)** for *Hue Hostel* is designed to addres
 - **Payment Status Dashboard:** Real-time overview of paid/unpaid students with filters (month-wise, room-wise).
 - **Receipt Generation:** Digital receipts for completed payments, accessible to students and admins.
 - **Defaulters’ List:** Automated reports highlighting overdue payments for follow-up.
-
 
 ---
 
@@ -76,48 +75,42 @@ While the HMS offers significant benefits, certain constraints may affect its im
 
 - Physical security risks (e.g., shared hostel office computers) may lead to unauthorized access.
 
-
 ## How it Will be Implemented?
+
 The Hostel Management System will be developed using an **Iterative Waterfall Model**, combining the structured phases of traditional waterfall with iterative feedback loops. This allows for incremental improvements while maintaining clear milestones.Following are the phases in brief:
-#### **Phase 1: Requirements Gathering & Analysis
+
+#### \*\*Phase 1: Requirements Gathering & Analysis
 
 - Conduct stakeholder interviews (warden, staff, students)
-- Document functional requirements and  non-functional requirements:
-**Feedback Loop**: Present requirements to stakeholders for validation
+- Document functional requirements and non-functional requirements:
+  **Feedback Loop**: Present requirements to stakeholders for validation
 
-#### **Phase 2: System Design
+#### \*\*Phase 2: System Design
 
-- **Architectural design:**
-		- Process Model (Lvl 0,1,2 DFDs)
-		- Logic Model (Decision table)
-		- ER Model
-- **UI/UX wire framing:**
-	- Admin dashboard
-	- Student portal
-**Feedback Loop**: Design review with hostel administration
+- **Architectural design:** - Process Model (Lvl 0,1,2 DFDs) - Logic Model (Decision table) - ER Model
+- **UI/UX wire framing:** - Admin dashboard - Student portal
+  **Feedback Loop**: Design review with hostel administration
 
 #### **Phase 3: System Implementation**
 
 - **Priority modules implementation:**
-	-  Student registration system
-	 - Basic room allocation
-	 - Admin authentication
-- **Database implementation**:
-	- Postgres
-	- MySQL
-**Feedback Loop**: Show the system to a small group of users first to get their opinions
+    - Student registration system
+    - Basic room allocation
+    - Admin authentication
+- **Database implementation**: - Postgres - MySQL
+  **Feedback Loop**: Show the system to a small group of users first to get their opinions
 
-#### **Phase 4: Testing & Evaluation
+#### \*\*Phase 4: Testing & Evaluation
 
 - Unit testing of implemented modules
 - Integration testing of core workflow
 - System testing of authentication system
-**Feedback Loop**: Collect performance metrics & user feedback
+  **Feedback Loop**: Collect performance metrics & user feedback
 
-#### **Phase 5: Deployment & Maintenance
+#### \*\*Phase 5: Deployment & Maintenance
 
 - Comprehensive system testing
 - Refine UI based on feedback
 - Optimize database performance
 - System and User Documentation
-**Feedback Loop**: Post-deployment support & system tweaks
+  **Feedback Loop**: Post-deployment support & system tweaks

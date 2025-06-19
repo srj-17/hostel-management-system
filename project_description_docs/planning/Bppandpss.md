@@ -245,4 +245,3 @@ working system, helpful guides, and training to get started.
 - User manuals and simple guidance materials for students, staff, and admins.
 - Full project documentation, including system design and test results.
 - A training session for hostel staff and administrators to learn how to use the system.
-

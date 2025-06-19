@@ -1,5 +1,5 @@
 function getBeds() {}
 
 module.exports = {
-  getBeds,
-};
+    getBeds,
+}

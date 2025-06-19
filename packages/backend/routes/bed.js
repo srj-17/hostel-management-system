@@ -1,8 +1,8 @@
-const { getBeds } = require("../controllers/bedsController");
+const { getBeds } = require("../controllers/bedsController")
 
-const { Router } = express();
-const bed = Router();
+const { Router } = express()
+const bed = Router()
 
-bed.get("/", getBeds);
+bed.get("/", getBeds)
 
-module.exports = bed;
+module.exports = bed
