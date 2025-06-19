@@ -1,5 +1,5 @@
 function getAttandances() {}
 
 module.exports = {
-  getAttandances,
-};
+    getAttandances,
+}

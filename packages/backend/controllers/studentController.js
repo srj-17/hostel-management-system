@@ -1,5 +1,5 @@
 function getStudents() {}
 
 module.exports = {
-  getStudents,
-};
+    getStudents,
+}
