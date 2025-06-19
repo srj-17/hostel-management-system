@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Bed" ALTER COLUMN "roomId" DROP NOT NULL;

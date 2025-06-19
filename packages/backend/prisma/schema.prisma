@@ -48,6 +48,6 @@ model Bed {
     /// we'll still check in code, but not in db
     roomId Int
 
-    student   Student @relation(fields: [studentId], references: [id])
-    studentId Int
+    student   Student? @relation(fields: [studentId], references: [id])
+    studentId Int?
 }
