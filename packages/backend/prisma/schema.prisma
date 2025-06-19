@@ -7,3 +7,47 @@ datasource db {
     provider = "postgresql"
     url      = env("DATABASE_URL")
 }
+
+model Student {
+    id        Int      @id @default(autoincrement())
+    firstName String
+    lastName  String
+    email     String
+    dob       DateTime
+    // the phone number is assumed to be a typical nepali phone number
+    phone     Int
+    address   String
+
+    attandances Attendance[]
+    payments    Payment[]
+    Bed         Bed[]
+}
+
+model Attendance {
+    id        Int      @id @default(autoincrement())
+    student   Student  @relation(fields: [studentId], references: [id])
+    studentId Int
+    date      DateTime
+    /// student is present by default
+    present   Boolean  @default(true)
+}
+
+model Payment {
+    id      Int     @id @default(autoincrement())
+    year    Int
+    month   Int
+    feePaid Boolean
+
+    student   Student @relation(fields: [studentId], references: [id])
+    studentId Int
+}
+
+model Bed {
+    id     Int @id @default(autoincrement())
+    /// we're giving up on check constraints in db for now
+    /// we'll still check in code, but not in db
+    roomId Int
+
+    student   Student @relation(fields: [studentId], references: [id])
+    studentId Int
+}
