@@ -1,7 +1,7 @@
 const { getAttandances } = require("../controllers/attandanceController")
+const { Router } = require("express")
 
-const { Router } = express()
-const attandance = Router()
+const attandance = Router({ mergeParams: true })
 
 attandance.get("/", getAttandances)
 

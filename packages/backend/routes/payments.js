@@ -1,7 +1,7 @@
 const { getPayments } = require("../controllers/paymentsController")
+const { Router } = require("express")
 
-const { Router } = express()
-const payment = Router()
+const payment = Router({ mergeParams: true })
 
 payment.get("/", getPayments)
 

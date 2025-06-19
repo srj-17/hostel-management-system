@@ -1,7 +1,7 @@
 const { getBeds } = require("../controllers/bedsController")
+const { Router } = require("express")
 
-const { Router } = express()
-const bed = Router()
+const bed = Router({ mergeParams: true })
 
 bed.get("/", getBeds)
 
