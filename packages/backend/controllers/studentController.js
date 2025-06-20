@@ -1,6 +1,7 @@
 const db = require("../models")
 const InternalServerError = require("../customErrors/InternalServerError")
 const NotFoundError = require("../customErrors/NotFoundError")
+const { getPayments } = require("./paymentsController")
 
 async function getStudents(req, res, next) {
     const students = await db.student.findMany()
@@ -24,9 +25,7 @@ async function postStudents(req, res, next) {
 
         res.json(student)
     } catch (e) {
-        res.json({
-            msg: "Student could not be created",
-        })
+        throw new InternalServerError("Student could not be created")
     }
 }
 
@@ -100,5 +99,5 @@ module.exports = {
     getStudent,
     putStudent,
     deleteStudent,
+    getPayments,
 }
-

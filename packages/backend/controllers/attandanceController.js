@@ -38,13 +38,14 @@ async function putAttandance(req, res, next) {
         // used findMany because find requires unique id for
         // attandance, which we don't have. Maybe schema or logic
         // needs fixing.
-        const attandances = await db.attendance.findMany({
+        const attandance = await db.attendance.findUnique({
             where: {
-                studentId: +studentId,
-                date: providedDateWithTimeStamp,
+                attandanceIdentifier: {
+                    studentId: +studentId,
+                    date: providedDateWithTimeStamp,
+                },
             },
         })
-        const attandance = attandances[0]
 
         const newAttandance = attandance.present ? false : true
 
