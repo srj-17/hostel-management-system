@@ -3,7 +3,11 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start:client": "npm run -w packages/frontend dev",
+        "start": "npm run start:client",
+        "start:server": "npm run -w packages/backend start",
+        "prettify": "prettier . --write",
+        "test": "npm run -w packages/frontend test"
     },
     "repository": {
         "type": "git",
