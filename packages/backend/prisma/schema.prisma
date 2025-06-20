@@ -30,16 +30,20 @@ model Attendance {
     date      DateTime
     /// student is present by default
     present   Boolean  @default(true)
+
+    @@unique([studentId, date])
 }
 
 model Payment {
     id      Int     @id @default(autoincrement())
     year    Int
     month   Int
-    feePaid Boolean
+    feePaid Boolean @default(false)
 
     student   Student @relation(fields: [studentId], references: [id])
     studentId Int
+
+    @@unique([year, month, studentId])
 }
 
 model Bed {
