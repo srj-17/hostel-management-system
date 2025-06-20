@@ -1,7 +1,6 @@
 const db = require("../models")
-const { put } = require("../routes/students")
-const InternalServerError = require("../customErrors/InternalServerError");
-const NotFoundError = require("../customErrors/NotFoundError");
+const InternalServerError = require("../customErrors/InternalServerError")
+const NotFoundError = require("../customErrors/NotFoundError")
 
 async function getStudents(req, res, next) {
     const students = await db.student.findMany()
@@ -42,19 +41,17 @@ async function getStudent(req, res, next) {
         })
 
         if (!student) {
-            throw new NotFoundError("Student could not be found");
+            throw new NotFoundError("Student could not be found")
         }
 
         res.json(student)
-
-    } catch(e) {
-        console.error(e);
-        if (e.stuatusCode = 404) {
-            throw e;
+    } catch (e) {
+        console.error(e)
+        if ((e.stuatusCode = 404)) {
+            throw e
         }
-        throw new InternalServerError("Error occured when getting student");
+        throw new InternalServerError("Error occured when getting student")
     }
-
 }
 
 async function putStudent(req, res, next) {
@@ -76,24 +73,24 @@ async function putStudent(req, res, next) {
 
         res.json(student)
     } catch (e) {
-        console.error(e);
-        throw new InternalServerError("Student could not be updated");
+        console.error(e)
+        throw new InternalServerError("Student could not be updated")
     }
 }
 
 async function deleteStudent(req, res, next) {
-    const {studentId} = req.params;
+    const { studentId } = req.params
     try {
         const deletedStudent = await db.student.delete({
             where: {
-                id: +studentId
-            }
+                id: +studentId,
+            },
         })
 
-        res.json(deletedStudent);
-        console.error(e);
-    } catch (e){
-        throw new InternalServerError("Student could not be deleted");
+        res.json(deletedStudent)
+    } catch (e) {
+        console.error(e)
+        throw new InternalServerError("Student could not be deleted")
     }
 }
 
@@ -104,3 +101,4 @@ module.exports = {
     putStudent,
     deleteStudent,
 }
+
