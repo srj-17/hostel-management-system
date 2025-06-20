@@ -40,7 +40,7 @@ async function putAttandance(req, res, next) {
         // needs fixing.
         const attandance = await db.attendance.findUnique({
             where: {
-                studentId_date: {
+                attandanceIdentifier: {
                     studentId: +studentId,
                     date: providedDateWithTimeStamp,
                 },

@@ -31,7 +31,7 @@ model Attendance {
     /// student is present by default
     present   Boolean  @default(true)
 
-    @@unique([studentId, date])
+    @@unique([studentId, date], name: "attandanceIdentifier")
 }
 
 model Payment {
@@ -43,7 +43,7 @@ model Payment {
     student   Student @relation(fields: [studentId], references: [id])
     studentId Int
 
-    @@unique([year, month, studentId])
+    @@unique([year, month, studentId], name: "paymentIdentifier")
 }
 
 model Bed {

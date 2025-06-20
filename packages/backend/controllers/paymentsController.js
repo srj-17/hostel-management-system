@@ -87,7 +87,7 @@ async function putPayment(req, res, next) {
 
         const payment = await db.payment.findUnique({
             where: {
-                year_month_studentId: {
+                paymentIdentifier: {
                     year: currentYear,
                     month: currentMonth,
                     studentId: +studentId,
