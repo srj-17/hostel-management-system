@@ -6,11 +6,11 @@ const {
 } = require("../controllers/attandanceController")
 const { Router } = require("express")
 
-const attandance = Router({ mergeParams: true })
+const attandances = Router({ mergeParams: true })
 
-attandance.get("/", getAttandances)
-attandance.post("/month", postAttandanceOfCurrentMonth)
-attandance.get("/:studentId", getAttandanceByStudentId)
-attandance.put("/:studentId", putAttandance)
+attandances.get("/", getAttandances)
+attandances.post("/month", postAttandanceOfCurrentMonth)
+attandances.get("/:studentId", getAttandanceByStudentId)
+attandances.put("/:studentId", putAttandance)
 
-module.exports = attandance
+module.exports = attandances

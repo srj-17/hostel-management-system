@@ -3,16 +3,16 @@ const {
     postStudents,
     getStudent,
     putStudent,
-    deleteStudent
+    deleteStudent,
 } = require("../controllers/studentController")
 const { Router } = require("express")
 
-const student = Router({ mergeParams: true })
+const students = Router({ mergeParams: true })
 
-student.get("/", getStudents)
-student.post("/", postStudents)
-student.get("/:studentId", getStudent)
-student.put("/:studentId", putStudent)
-student.delete("/:studentId", deleteStudent)
+students.get("/", getStudents)
+students.post("/", postStudents)
+students.get("/:studentId", getStudent)
+students.put("/:studentId", putStudent)
+students.delete("/:studentId", deleteStudent)
 
-module.exports = student
+module.exports = students

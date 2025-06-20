@@ -14,10 +14,10 @@ const router = require("./routes")
 const NotFoundError = require("./customErrors/NotFoundError")
 
 // routes
-app.use("/students", router.student)
-app.use("/attandances", router.attandance)
-app.use("/beds", router.bed)
-app.use("/payments", router.payment)
+app.use("/students", router.students)
+app.use("/attandances", router.attandances)
+app.use("/beds", router.beds)
+app.use("/payments", router.payments)
 
 // error handling
 app.use((req, res, next) => {
@@ -26,7 +26,7 @@ app.use((req, res, next) => {
 
 app.use((err, req, res, next) => {
     res.status(err.statusCode || 500).json({
-        msg: err.message
+        msg: err.message,
     })
 })
 

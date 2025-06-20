@@ -1,8 +1,8 @@
 const { getPayments } = require("../controllers/paymentsController")
 const { Router } = require("express")
 
-const payment = Router({ mergeParams: true })
+const payments = Router({ mergeParams: true })
 
-payment.get("/", getPayments)
+payments.get("/", getPayments)
 
-module.exports = payment
+module.exports = payments

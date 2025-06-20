@@ -1,11 +1,11 @@
-const attandance = require("./attandance")
-const bed = require("./bed")
-const payment = require("./payments")
-const student = require("./students")
+const attandances = require("./attandance")
+const beds = require("./bed")
+const payments = require("./payments")
+const students = require("./students")
 
 module.exports = {
-    student,
-    attandance,
-    payment,
-    bed,
+    students,
+    attandances,
+    payments,
+    beds,
 }
