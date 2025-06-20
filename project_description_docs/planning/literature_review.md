@@ -1,116 +1,112 @@
-## 1. What Exists? (Current Scenario)
 
-Currently, *Hue Hostel* operates without a **Hostel Management System (HMS)**, relying entirely on manual and paper-based processes. This traditional approach leads to several inefficiencies:
+<!-- *Note: Literature Review (Review of the similar/relevant projects, theories and results by other researchers)* as mentioned by bsc.csitnepal blog, so i included research papers citations..
 
-- **Time-consuming operations**: Manual record-keeping (student enrollment, room allocation, payment tracking) slows down administrative tasks.
+Put these references in Appendix/Reference Sections -->
 
-- **Communication gaps**: Announcements, complaints, and notices are managed verbally or through physical notice boards, leading to missed updates.
+ ## References:
 
-- **Financial mismanagement**: Fee collection, defaulters' tracking, and receipt generation are done manually, increasing errors and delays.
+ **HMS Software:**
 
-- **Data insecurity**: Paper records are prone to damages, loss, or unauthorized access.
+ezeeAbsolute: https://www.ezeeabsolute.com/hostel-management-system.php
 
----
+hostelsnap: https://www.hostelsnap.com/
 
-## Literature Reviews:
+geniuseduerp: https://geniuseduerp.com/features/university-hostel-table-management-system.html  
 
-The **Hostel Management System (HMS)** for *Hue Hostel* is designed to address critical operational inefficiencies by integrating **digital enrollment, communication, and payment tracking** into a centralized platform.The scope includes:
+**Research Paper Citations:**
+- Kumar, A., & Sharma, R. (2021). "Web-Based Hostel Management System Using PHP and MySQL." International Journal of Scientific Research in Computer Science, Engineering and Information Technology, 7(2), 341-348. [DOI: 10.32628/CSEIT217256]
 
-## Scopes of the HMS
+- Patel, S., & Verma, M. (2022). "Smart Hostel Management System with IoT Integration." Proceedings of the 3rd International Conference on Computing and Communication Technologies, 112-119. [IEEE Xplore: 10.1109/ICCCT2.2022.9756789]
+**
 
-#### **1. Enhanced Student Enrollment Process**
+## 1. Existing Hostel Management Systems
+After looking at many research papers and existing software, we found that most hostel management systems focus on four main things:
+- Automated student onboarding with digital forms (Kumar & Sharma, 2020)
+- Online payment systems built into the software (geniuseduerp)
+- Biometric-based attendance (ezeeAbsolute).
+- Visitor log management (hostelsnap)
+- Algorithms for optimal room distribution (Patel et al., 2021).
 
-- **Digital Registration Portal:** Secure online form for student applications, including personal details, course information, and emergency contacts.
-- **Automated Room Allocation:** Rule-based system for assigning rooms (e.g., by gender, year of study, or special requests).
-- **Document Management:** Upload and storage of ID proofs, medical records, and rental agreements.
-- **Real-Time Availability Tracking:** Dashboard showing occupied/vacant rooms to prevent overbooking.
 
-#### **2. Efficient Technical Management of Hostel Operations**
+But the problem is these systems are mostly made for big university hostels with lots of money to spend. They need strong internet connections and skilled technical manpower to operate. When we checked, none of them were really made for small hostels like Hue Hostel in Nepal.
 
-- **Maintenance Request System:** Ticketing platform for students to report hostel issues with status tracking.
-- **Inventory & Asset Management:** Log for hostel resources (beds, furniture, appliances) with maintenance schedules.
-- **Visitor Management:** Digital log for guest entries/exits with automated check-in/check-out timestamps.
-- **Automated Notices & Alerts:** Broadcast announcements (e.g., events) via SMS/email.
 
-#### **3. Seamless Communication Between Hostel and Hostelers**
 
-- **Centralized Messaging Hub:** In-app chat or noticeboard for announcements, FAQs, and policy updates.
-- **Complaint Resolution System:** Track student complaints with automated - forwarding to staff.
-- **Leave/Absence Management:** Online submission and approval of leave requests with attendance records.
+## Missing  in Current Systems
+After reviewing the research papers and software operations, we noticed some gaps in those systems:
+- No systems designed specifically for Nepalese hostels.
+- Nothing made for small budget operations
+- Most systems are too complicated for first-time computer users
 
-#### **4. Transparent Payment Tracking**
+## Need for a Custom Solution
+Currently, Hue Hostel does everything manually using paper. This causes many problems:
+- Slow work: Writing everything by hand takes too much time.
+- Data risks: Paper files can get damaged or lost.
+- Money mistakes: Manual fee collection leads to errors.
 
-- **Automated Fee Reminders:** Scheduled alerts for upcoming payment deadlines via email/SMS.
-- **Payment Status Dashboard:** Real-time overview of paid/unpaid students with filters (month-wise, room-wise).
-- **Receipt Generation:** Digital receipts for completed payments, accessible to students and admins.
-- **Defaulters’ List:** Automated reports highlighting overdue payments for follow-up.
+That's why we're building our own custom HMS just for them. We want to replace all those messy paper records and manual processes with a simple digital system that works perfectly for Hue Hostel's specific requirements.
 
----
+## Plans for HMS System
+Our plan combines several good ideas from our research:
 
-## Limitations of the HMS
+- Using flexible development methods so we can adjust as we go.
+- Designing specifically for the people who will use it.
+- Keeping costs very low (adding a fee of Rs.250 for each students per month).
 
-While the HMS offers significant benefits, certain constraints may affect its implementation and effectiveness:
 
-#### **1. User Dependency on Technology**
 
-- Some students or staff may lack digital literacy, requiring training sessions.
+## Implementation model for HMS System 
 
-- Resistance to change from users accustomed to manual processes could slow adoption.
+The HMS will be developed using Traditional Waterfall Model. Following are the phases desribed in detail:
 
-#### **2. Feature Overload Risk**
+ **Phase 1: Requirements Gathering**
+  
+  - Conduct interviews with hostel warden, staffs and students for understanding about hostel administrative needs and student pain points.
+  - Document everything from room allocation rules to fee payment schedules.
 
-- If the system has too many complex features, basic users (e.g., hostel staff) may struggle to understand it.
+ **Phase 2: Planning**
+ 
+ Establish the fundamental blueprint for the entire Hostel Management System project by creating the Baseline Project Plan (BPP) which includes: 
+  - Project Definition
+  - Scope Descriptions
+  - Resource Planning
+  - Timeline Establishment
+  - Project Constraints & Assumptions
 
-- Unnecessary functionalities could lead to underutilization, reducing the system’s effectiveness.
+ **Phase 3: Analysis**
+Perform deep analysis on following areas:
+- Functional & Non functional requirements
+- Risk Analysis
+- Fesibility study
+- Process & Data Modelling
+- Interface Analysis 
 
-#### **3. Financial Constraints**
+ **Phase 4: Design**
+Create system design for Hostel Management System:
+- Process Model Design (Level 0,1 DFD)
+- Data Model Design (ER Diagrams)
+- Database Design
+- Interface Design
 
-- Development & maintenance costs may be high for small hostels with limited budgets.
+ **Phase 5: Implementation**
+Use appropriate tools and software for system implementations:
+- Implement frontend system 
+- Implement Backend System
+- Use related Database Management Software
 
-- Recurring expenses (e.g., SMS alerts, cloud hosting) add to operational costs.
+ **Phase 6: Testing & Deployment**
+Use different testing approaches:
+- Unit Testing
+- Integration Testing
+- System Testing 
 
-#### **4. Security Risks**
+After the testing phase is completed, deploy the system. The deployment phase includes: 
+- Server Setup & Installation
+- Basic staff training
 
-- Cybersecurity threats (e.g., hacking, data breaches) could expose sensitive student and payment details.
+ **Phase 7: Maintenance**
 
-- Physical security risks (e.g., shared hostel office computers) may lead to unauthorized access.
-
-## How it Will be Implemented?
-
-The Hostel Management System will be developed using an **Iterative Waterfall Model**, combining the structured phases of traditional waterfall with iterative feedback loops. This allows for incremental improvements while maintaining clear milestones.Following are the phases in brief:
-
-#### \*\*Phase 1: Requirements Gathering & Analysis
-
-- Conduct stakeholder interviews (warden, staff, students)
-- Document functional requirements and non-functional requirements:
-  **Feedback Loop**: Present requirements to stakeholders for validation
-
-#### \*\*Phase 2: System Design
-
-- **Architectural design:** - Process Model (Lvl 0,1,2 DFDs) - Logic Model (Decision table) - ER Model
-- **UI/UX wire framing:** - Admin dashboard - Student portal
-  **Feedback Loop**: Design review with hostel administration
-
-#### **Phase 3: System Implementation**
-
-- **Priority modules implementation:**
-    - Student registration system
-    - Basic room allocation
-    - Admin authentication
-- **Database implementation**: - Postgres - MySQL
-  **Feedback Loop**: Show the system to a small group of users first to get their opinions
-
-#### \*\*Phase 4: Testing & Evaluation
-
-- Unit testing of implemented modules
-- Integration testing of core workflow
-- System testing of authentication system
-  **Feedback Loop**: Collect performance metrics & user feedback
-
-#### \*\*Phase 5: Deployment & Maintenance
-
-- Comprehensive system testing
-- Refine UI based on feedback
-- Optimize database performance
-- System and User Documentation
-  **Feedback Loop**: Post-deployment support & system tweaks
+In Maintenance Phase, provide:
+- User Support
+- Documentation (User & System)
+- Bug fixes
