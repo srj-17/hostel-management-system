@@ -7,7 +7,9 @@
         "start": "npm run start:client",
         "start:server": "npm run -w packages/backend start",
         "prettify": "prettier . --write",
-        "test": "npm run -w packages/frontend test"
+        "test:client": "npm run -w packages/frontend test",
+        "test:server": "npm run -w packages/backend test",
+        "test": "npm run test:client"
     },
     "repository": {
         "type": "git",
