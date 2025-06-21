@@ -15,6 +15,7 @@ async function getPayments(req, res, next) {
 
         res.json(payments)
     } catch (e) {
+        console.error(e)
         throw new InternalServerError(
             "Could not get the payments of the student!"
         )
