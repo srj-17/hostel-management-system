@@ -25,6 +25,7 @@ async function postStudents(req, res, next) {
 
         res.json(student)
     } catch (e) {
+        console.error(e)
         throw new InternalServerError("Student could not be created")
     }
 }

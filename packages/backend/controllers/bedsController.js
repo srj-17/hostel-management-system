@@ -13,6 +13,7 @@ async function getBeds(req, res, next) {
 
         res.json(beds)
     } catch (e) {
+        console.error(e)
         throw new InternalServerError("Bed information could not be fetched")
     }
 }
@@ -29,6 +30,7 @@ async function getBedsByRoomId(req, res, next) {
 
         res.json(beds)
     } catch (e) {
+        console.error(e)
         throw new InternalServerError("Beds information could not be fetched")
     }
 }
@@ -47,6 +49,7 @@ async function putStudentInBed(req, res, next) {
 
         res.json(bed)
     } catch (e) {
+        console.error(e)
         throw new InternalServerError("Could not assign the bed to the student")
     }
 }
@@ -84,6 +87,7 @@ async function getFreeBeds(req, res, next) {
 
         res.json(freeBeds)
     } catch (e) {
+        console.error(e)
         throw new InternalServerError(
             "Could not get free beds. Maybe try paid?"
         )
