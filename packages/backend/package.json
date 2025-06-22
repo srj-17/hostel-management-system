@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-        "start": "node --watch app.js"
+        "start": "node --watch app.js",
+        "test": "jest"
     },
     "keywords": [],
     "author": "",
@@ -16,6 +17,8 @@
         "express": "^5.1.0"
     },
     "devDependencies": {
-        "prisma": "^6.9.0"
+        "jest": "^30.0.2",
+        "prisma": "^6.9.0",
+        "supertest": "^7.1.1"
     }
 }

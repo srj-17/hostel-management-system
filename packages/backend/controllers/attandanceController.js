@@ -14,6 +14,7 @@ async function getAttandances(req, res, next) {
 
         res.json(todaysAttandances)
     } catch (e) {
+        console.error(e)
         throw new InternalServerError(
             "Getting today's attandances was a failure! Better luck next day!"
         )
@@ -83,6 +84,7 @@ async function getAttandanceByStudentId(req, res, next) {
 
         res.json(attandancesForTheMonth)
     } catch (e) {
+        console.error(e)
         throw new InternalServerError(
             "Student's attandances could not be found"
         )
@@ -120,6 +122,7 @@ async function postAttandanceOfCurrentMonth(req, res, next) {
 
         res.json({ msg: "Attandances for the month created" })
     } catch (e) {
+        console.error(e)
         throw new InternalServerError(
             "Attances for the month could not be created"
         )
