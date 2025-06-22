@@ -51,6 +51,7 @@ const options = {
 
 const swaggerOptions = {
     customSiteTitle: "Hostel Management System API docs",
+    customfavIcon: "/img/hms-logo.png",
     customCss: `
     .topbar { display: none }  /* Remove top bar */ 
     .swagger-ui .info { margin: 20px 0 }  /* Adjust info section */

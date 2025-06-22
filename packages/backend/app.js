@@ -1,4 +1,5 @@
 require("dotenv").config()
+const path = require("node:path")
 const express = require("express")
 const cors = require("cors")
 const setupSwagger = require("./swaggerConfig")
@@ -22,6 +23,10 @@ app.use("/payments", router.payments)
 
 // documentation
 setupSwagger(app)
+
+// static assets
+const assetsPath = path.join(__dirname, "public")
+app.use(express.static(assetsPath))
 
 // error handling
 app.use((req, res, next) => {
