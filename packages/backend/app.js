@@ -1,6 +1,7 @@
 require("dotenv").config()
 const express = require("express")
 const cors = require("cors")
+const setupSwagger = require("./swaggerConfig")
 
 const app = express()
 
@@ -18,6 +19,9 @@ app.use("/students", router.students)
 app.use("/attandances", router.attandances)
 app.use("/beds", router.beds)
 app.use("/payments", router.payments)
+
+// documentation
+setupSwagger(app)
 
 // error handling
 app.use((req, res, next) => {
