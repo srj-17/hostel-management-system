@@ -2,7 +2,6 @@ const InternalServerError = require("../customErrors/InternalServerError")
 const db = require("../models")
 const { getMonthStartDate, getMonthEndDate } = require("../utils/dateFunctions")
 
-// get attandance of all students for today
 async function getAttandances(req, res, next) {
     const today = new Date()
     try {
@@ -21,7 +20,6 @@ async function getAttandances(req, res, next) {
     }
 }
 
-// toggle attandance presence for that day
 async function putAttandance(req, res, next) {
     try {
         const { studentId } = req.params
@@ -65,7 +63,6 @@ async function putAttandance(req, res, next) {
         throw new InternalServerError("Attandance could not be updated")
     }
 }
-// get attandance of student for the whole month
 async function getAttandanceByStudentId(req, res, next) {
     const { studentId } = req.params
     const monthStart = getMonthStartDate(new Date())
