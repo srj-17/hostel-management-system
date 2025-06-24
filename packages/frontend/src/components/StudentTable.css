@@ -1,0 +1,64 @@
+.student-table-container {
+    overflow-x: auto;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.student-table th,
+.student-table td {
+    padding: 1.25rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--ghost-white);
+}
+
+.student-table th {
+    font-weight: 600;
+    color: var(--slate-gray);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+}
+
+.student-table tbody tr {
+    transition: background-color 0.2s ease-in-out;
+}
+
+.student-table tbody tr:hover {
+    background-color: var(--ghost-white);
+}
+
+.student-table td {
+    vertical-align: middle;
+    color: var(--steel-blue);
+}
+
+.student-table td:first-child {
+    color: var(--dark-charcoal);
+    font-weight: 500;
+}
+
+.student-table a {
+    color: var(--steel-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.student-table a:hover {
+    text-decoration: underline;
+    color: var(--dark-charcoal);
+}
+
+.view-btn {
+    background-color: var(--silver-chalice);
+    padding: 0.4rem 0.8rem;
+    color: var(--dark-charcoal);
+    font-weight: 600;
+}
+
+.view-btn:hover {
+    background-color: var(--slate-gray);
+    color: var(--white);
+}

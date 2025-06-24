@@ -1,0 +1,41 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.overview-section .stat-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.occupancy-section .chart-placeholder {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.chart-container {
+    margin-top: 1rem;
+}
+
+.student-details-section .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.new-student-btn {
+    background-color: var(--steel-blue);
+}
+
+.new-student-btn:hover {
+    background-color: var(--dark-charcoal);
+}

@@ -1,0 +1,18 @@
+.stat-card {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.stat-card h4 {
+    font-size: 1rem;
+    color: var(--slate-gray);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.stat-card p {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--dark-charcoal);
+}

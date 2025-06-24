@@ -1,0 +1,88 @@
+.table-page-container {
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.table-page-container h2 {
+    margin-bottom: 1.5rem;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+    padding: 1.25rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--ghost-white);
+}
+
+.data-table th {
+    font-weight: 600;
+    color: var(--slate-gray);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+}
+
+.data-table tbody tr:hover {
+    background-color: var(--ghost-white);
+}
+
+.status {
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+}
+
+.status.paid,
+.status.present {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status.unpaid,
+.status.absent {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0;
+    color: var(--silver-chalice);
+    transition: color 0.2s;
+}
+
+.toggle-btn:hover {
+    color: var(--steel-blue);
+}
+
+.action-btn {
+    background-color: var(--steel-blue);
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+}
+
+.action-btn:hover {
+    background-color: var(--dark-charcoal);
+}
+
+.student-avatar {
+    font-size: 1.5rem;
+    margin-right: 0.75rem;
+    color: var(--silver-chalice);
+    vertical-align: middle;
+}

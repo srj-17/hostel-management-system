@@ -1,0 +1,75 @@
+.student-detail-page {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.back-link {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.back-link a {
+    color: var(--steel-blue);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.back-link a:hover {
+    color: var(--dark-charcoal);
+}
+
+.student-detail-card {
+    padding: 2rem;
+}
+
+.student-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.student-photo {
+    color: var(--silver-chalice);
+}
+
+.student-data h2 {
+    margin-bottom: 1rem;
+}
+
+.student-data p {
+    margin: 0.5rem 0;
+    color: var(--steel-blue);
+}
+
+.student-data p strong {
+    color: var(--dark-charcoal);
+    font-weight: 500;
+}
+
+.student-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--ghost-white);
+    padding-top: 2rem;
+    margin-top: 2rem;
+}
+
+.main-actions,
+.secondary-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.edit-btn {
+    background-color: var(--slate-gray);
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+}
+
+.delete-btn:hover {
+    background-color: #a01505;
+}
