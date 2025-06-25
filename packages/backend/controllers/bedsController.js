@@ -5,7 +5,7 @@ const db = require("../models")
 
 async function getBeds(req, res, next) {
     try {
-        const beds = await db.beds.findMany({
+        const beds = await db.bed.findMany({
             include: {
                 student: true,
             },
@@ -101,4 +101,3 @@ module.exports = {
     postBedInRoom,
     getFreeBeds,
 }
-
