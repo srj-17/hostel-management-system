@@ -27,7 +27,7 @@ attandances.get("/", getAttandances)
 /**
  * @swagger
  * /attandances/month:
- *   get:
+ *   post:
  *       summary: Create attandance records for all the students for the current
  *                month
  *       tags: [Attandances]
